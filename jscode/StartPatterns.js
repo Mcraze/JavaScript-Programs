@@ -110,6 +110,7 @@ function centerPyramidStarPattern(num) {
 }
 console.log(centerPyramidStarPattern(8));
 
+
 // Function to Print Reverse Cetered Pyramid Structure
 function revCenterPyramidStarPattern(num) {
 
@@ -118,11 +119,15 @@ function revCenterPyramidStarPattern(num) {
     for (let i = num; i > 0; i--) {
 
         for (let space = i; space <= num; space++) {
+
             singleRow += " ";
+
         }
 
         for (let j = 0; j < i; j++) {
+
             singleRow += "*";
+            
         }
 
         singleRow += "\n";
@@ -131,6 +136,7 @@ function revCenterPyramidStarPattern(num) {
     return singleRow;
 }
 console.log(revCenterPyramidStarPattern(8));
+
 
 // Function to Print Numeric Centered Pyramid Structure
 function centerPyramidNumericPattern(num) {
@@ -156,6 +162,7 @@ function centerPyramidNumericPattern(num) {
     return singleRow;
 }
 console.log(centerPyramidNumericPattern(8));
+
 
 // Function to Print Numeric Centered Pyramid Structure
 function revCenterPyramidNumericPattern(num) {
