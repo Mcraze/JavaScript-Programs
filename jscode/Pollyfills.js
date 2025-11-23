@@ -60,10 +60,10 @@ const stringArray = ["apple", "banana", "orange", "apple", "orange", "banana", "
 
 const stringCount = stringArray.reduce(function (accumulator, currentValue) {
     if(currentValue in accumulator) {
-        accumulator.currentValue += 1;
+        accumulator[currentValue] += 1;
     }
     else {
-        accumulator.currentValue = 1;
+        accumulator[currentValue] = 1;
     }
 
     return accumulator;
